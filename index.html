@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Bexley Dental • Implants, Invisalign® & Family Dentistry</title>
+<meta name="description" content="Bexley Dental in Bexley, Sydney offers Dental Implants, All-on-4, Invisalign®, cosmetic and family dentistry. Call (02) 9567 4151 or book online." />
+<link rel="canonical" href="https://bexleydental.com.au/" />
+<meta name="theme-color" content="#c8102e" />
+<link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+
+<!-- Schema: Dentist + FAQ -->
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@graph":[
+    {
+      "@type":"Dentist",
+      "@id":"https://bexleydental.com.au/#dentist",
+      "name":"Bexley Dental",
+      "url":"https://bexleydental.com.au/",
+      "email":"reception@bexleydental.com.au",
+      "telephone":"+61 2 9567 4151",
+      "image":"https://bexleydental.com.au/wp-content/uploads/2023/07/Bexley-Dental-Logo.png",
+      "priceRange":"$$",
+      "address":{
+        "@type":"PostalAddress",
+        "streetAddress":"400 Forest Rd",
+        "addressLocality":"Bexley",
+        "addressRegion":"NSW",
+        "postalCode":"2207",
+        "addressCountry":"AU"
+      },
+      "geo":{"@type":"GeoCoordinates","latitude":-33.9529,"longitude":151.1308},
+      "openingHoursSpecification":[
+        {"@type":"OpeningHoursSpecification","dayOfWeek":"Monday","opens":"08:30","closes":"19:00"},
+        {"@type":"OpeningHoursSpecification","dayOfWeek":"Tuesday","opens":"08:30","closes":"18:00"},
+        {"@type":"OpeningHoursSpecification","dayOfWeek":"Wednesday","opens":"08:30","closes":"18:00"},
+        {"@type":"OpeningHoursSpecification","dayOfWeek":"Thursday","opens":"08:30","closes":"19:00"},
+        {"@type":"OpeningHoursSpecification","dayOfWeek":"Friday","opens":"08:30","closes":"17:00"},
+        {"@type":"OpeningHoursSpecification","dayOfWeek":"Saturday","opens":"08:00","closes":"13:00"}
+      ],
+      "sameAs":[
+        "https://www.instagram.com/bexleydental/",
+        "https://www.facebook.com/Bexley-Dental-100063718714385/"
+      ],
+      "hasMap":"https://www.google.com/maps?q=400+Forest+Rd,+Bexley+NSW+2207,+Australia&output=embed"
+    },
+    {
+      "@type":"FAQPage",
+      "@id":"https://bexleydental.com.au/#faq",
+      "mainEntity":[
+        {"@type":"Question","name":"Do you accept emergency appointments?","acceptedAnswer":{"@type":"Answer","text":"Yes. Call (02) 9567 4151 and we’ll prioritise the earliest suitable time."}},
+        {"@type":"Question","name":"Do you provide All-on-4 full-arch solutions?","acceptedAnswer":{"@type":"Answer","text":"Yes, alongside single and multiple dental implants with guided planning."}},
+        {"@type":"Question","name":"Is Invisalign® offered for adults and teens?","acceptedAnswer":{"@type":"Answer","text":"Yes. We provide orthodontic assessments and Invisalign® options for adults and teens."}}
+      ]
+    }
+  ]
+}
+</script>
+
+<style>
+:root{
+  --brand:#c8102e; --brand-2:#8e0e24;
+  --ink:#0a0a0a; --muted:#6b7280; --line:#ececec;
+  --bg:#fafafb; --card:#ffffff;
+  --ring: 0 0 0 3px rgba(200,16,46,.25);
+}
+*{box-sizing:border-box}
+html,body{margin:0}
+body{font-family:Inter,system-ui,Segoe UI,Roboto,Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.65}
+
+/* Layout */
+.shell{display:grid;grid-template-columns:320px 1fr;min-height:100dvh}
+@media (max-width:960px){ .shell{grid-template-columns:1fr} }
+
+/* Sidebar */
+.aside{
+  position:sticky;top:0;height:100dvh;display:flex;flex-direction:column;gap:18px;
+  padding:20px 18px;border-right:1px solid var(--line);background:linear-gradient(180deg,var(--brand),var(--brand-2));
+  color:#fff
+}
+@media (max-width:960px){ .aside{position:relative;height:auto;border-right:none;border-bottom:1px solid var(--line)} }
+
+.brand{display:flex;align-items:center;gap:12px}
+.brand img{height:50px;width:auto;border-radius:10px;display:block;object-fit:contain;background:#fff;padding:6px}
+.brand a{color:#fff;text-decoration:none;font-weight:700;font-size:18px}
+
+.callouts{display:grid;gap:10px;margin-top:6px}
+.btn, .btn-outline{
+  display:inline-block;text-align:center;padding:12px 14px;border-radius:12px;font-weight:700
+}
+.btn{background:#fff;color:var(--brand)}
+.btn-outline{border:1px solid #fff;color:#fff}
+
+.sidecard{
+  background:rgba(255,255,255,.1);backdrop-filter: blur(6px);
+  border:1px solid rgba(255,255,255,.25);border-radius:14px;padding:14px
+}
+.sidecard h3{margin:0 0 8px 0;font-size:16px}
+.sidecard p,.sidecard li{color:#f3f3f3}
+.info{font-size:14px;margin:6px 0}
+.hours{padding-left:20px;margin:8px 0 0 0}
+
+/* Main */
+.main{padding:28px 24px}
+.wrap{max-width:1100px;margin-inline:auto;display:grid;gap:18px}
+
+.hero{
+  background: radial-gradient(80% 120% at 10% 10%, #fff, #f8f9fb 60%, #f1f3f7);
+  border:1px solid var(--line);border-radius:16px;padding:24px;
+  display:grid;gap:14px
+}
+@media (min-width:960px){ .hero{grid-template-columns:1.2fr .8fr} }
+.badge{display:inline-flex;gap:8px;align-items:center;background:var(--brand);color:#fff;border-radius:999px;padding:4px 10px;font-size:12px;font-weight:700}
+.hero h1{margin:8px 0 6px;font-size:28px}
+.kpis{display:flex;flex-wrap:wrap;gap:10px}
+.kpis div{border:1px dashed var(--line);border-radius:10px;padding:8px 12px;background:#fff;font-weight:600}
+
+.grid{display:grid;gap:18px}
+@media (min-width:960px){ .grid-2{grid-template-columns:1.1fr .9fr} }
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px}
+.card h2{margin-top:0}
+.meta{font-size:14px;color:var(--muted)}
+.list a{display:block;padding:8px 0;border-bottom:1px dashed var(--line);word-break:break-word}
+
+.service-list{list-style:none;margin:0;padding:0;display:grid;gap:10px}
+.service-list a{display:flex;justify-content:space-between;gap:10px;border:1px solid var(--line);border-radius:12px;padding:12px 14px}
+
+iframe{border:0;border-radius:12px}
+
+/* FAQ */
+details{border:1px solid var(--line);border-radius:12px;padding:12px}
+details+details{margin-top:10px}
+summary{cursor:pointer;font-weight:700}
+
+/* Sticky mobile actions */
+.fab{position:fixed;right:14px;bottom:14px;display:flex;gap:10px;z-index:50}
+.fab a{display:inline-block;border-radius:999px;padding:12px 16px;font-weight:700;box-shadow:0 10px 20px rgba(0,0,0,.12)}
+.fab .primary{background:var(--brand);color:#fff}
+.fab .ghost{background:#fff;border:1px solid var(--brand);color:var(--brand)}
+@media (min-width:961px){ .fab{display:none} }
+
+/* Focus */
+a:focus-visible{outline:var(--ring)}
+</style>
+</head>
+<body>
+
+<div class="shell">
+  <!-- LEFT STICKY SIDEBAR -->
+  <aside class="aside" role="complementary" aria-label="Clinic summary">
+    <div class="brand">
+      <a href="https://bexleydental.com.au/" target="_blank" rel="noopener" aria-label="Bexley Dental Home">
+        <img src="https://bexleydental.com.au/wp-content/uploads/2024/03/Image-3.png" alt="Bexley Dental logo">
+      </a>
+      <a href="https://bexleydental.com.au/" target="_blank" rel="noopener">Bexley Dental</a>
+    </div>
+
+    <div class="callouts">
+      <a class="btn" href="https://bexleydental.dentr.net/" target="_blank" rel="noopener">Book Online</a>
+      <a class="btn-outline" href="tel:+61295674151">Call (02) 9567 4151</a>
+    </div>
+
+    <div class="sidecard" aria-label="Contact details">
+      <h3>Contact</h3>
+      <p class="info"><strong>Address:</strong> 400 Forest Rd, Bexley NSW 2207</p>
+      <p class="info"><strong>Email:</strong> <a href="mailto:reception@bexleydental.com.au" style="color:#fff;text-decoration:underline">reception@bexleydental.com.au</a></p>
+      <p class="info"><a href="https://share.google/rscJK0KVv6dkg4shG" target="_blank" rel="noopener" style="color:#fff;text-decoration:underline">View Google Profile</a></p>
+    </div>
+
+    <div class="sidecard" aria-label="Opening hours">
+      <h3>Opening Hours</h3>
+      <ul class="hours">
+        <li>Mon — 8:30 am–7 pm</li>
+        <li>Tue — 8:30 am–6 pm</li>
+        <li>Wed — 8:30 am–6 pm</li>
+        <li>Thu — 8:30 am–7 pm</li>
+        <li>Fri — 8:30 am–5 pm</li>
+        <li>Sat — 8 am–1 pm</li>
+        <li>Sun — Closed</li>
+      </ul>
+    </div>
+
+    <div class="sidecard">
+      <h3>Quick Links</h3>
+      <p class="info"><a href="https://bexleydental.com.au/privacy-policy/" target="_blank" rel="noopener" style="color:#fff;text-decoration:underline">Privacy Policy</a></p>
+      <p class="info"><a href="https://bexleydental.com.au/contact-us/" target="_blank" rel="noopener" style="color:#fff;text-decoration:underline">Contact Form</a></p>
+    </div>
+  </aside>
+
+  <!-- RIGHT MAIN CONTENT -->
+  <main class="main" role="main">
+    <div class="wrap">
+
+      <!-- HERO -->
+      <section class="hero" aria-label="Overview">
+        <div>
+          <span class="badge">Official Clinic</span>
+          <h1>Implants, Invisalign® & Family Dentistry in Bexley</h1>
+          <p>From preventive check-ups to <strong>Dental Implants</strong> & <strong>All-on-4</strong>, <strong>Invisalign®</strong>, cosmetic and restorative care—our team focuses on comfort, precision and long-term oral health.</p>
+          <div class="kpis" aria-label="Highlights">
+            <div>Same-day emergencies</div>
+            <div>Guided implant planning</div>
+            <div>Easy parking via Albyn St</div>
+          </div>
+        </div>
+        <div class="card">
+          <h2 style="margin-top:0">Fast Actions</h2>
+          <p class="meta">Prefer to speak with us? Call or book in a few taps.</p>
+          <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:8px">
+            <a class="btn" href="https://bexleydental.dentr.net/" target="_blank" rel="noopener">Book Online</a>
+            <a class="btn-outline" href="tel:+61295674151">Call (02) 9567 4151</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- SERVICES + MAP -->
+      <section class="grid grid-2" aria-label="Services and map">
+        <div class="card">
+          <h2>Popular Services</h2>
+          <ul class="service-list">
+            <li><a href="https://bexleydental.com.au/dental-implants/" target="_blank" rel="noopener">Dental Implants & All-on-4 <span aria-hidden="true">→</span></a></li>
+            <li><a href="https://bexleydental.com.au/orthodontics/" target="_blank" rel="noopener">Orthodontics & Invisalign® <span aria-hidden="true">→</span></a></li>
+            <li><a href="https://bexleydental.com.au/cosmetic-dentistry/" target="_blank" rel="noopener">Cosmetic Dentistry <span aria-hidden="true">→</span></a></li>
+            <li><a href="https://bexleydental.com.au/dentist/" target="_blank" rel="noopener">General & Family Dentistry <span aria-hidden="true">→</span></a></li>
+          </ul>
+        </div>
+
+        <div class="card" aria-label="Map">
+          <h2>Find Us</h2>
+          <p class="meta">400 Forest Rd, Bexley NSW 2207 • Parking in the council car park on Albyn St (rear access).</p>
+          <iframe
+            title="Bexley Dental Map"
+            src="https://www.google.com/maps?q=400%20Forest%20Rd,%20Bexley%20NSW%202207%20Australia&output=embed"
+            width="100%" height="340" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen>
+          </iframe>
+        </div>
+      </section>
+
+      <!-- CITATIONS -->
+      <section class="card" aria-label="Citations and profiles">
+        <h2>Citations & Profiles</h2>
+        <div class="list">
+          <a href="https://dentist.directory/listing/bexley-dental/" target="_blank" rel="noopener">dentist.directory</a>
+          <a href="https://www.brownbook.net/business/54074357/bexley-dental/" target="_blank" rel="noopener">brownbook.net</a>
+          <a href="https://au.enrollbusiness.com/BusinessProfile/6556181" target="_blank" rel="noopener">enrollbusiness.com</a>
+          <a href="https://www.cybo.com/AU-biz/bexley-dental_20" target="_blank" rel="noopener">cybo.com</a>
+          <a href="https://www.callupcontact.com/b/businessprofile/Bexley_Dental/9724364" target="_blank" rel="noopener">callupcontact.com</a>
+          <a href="https://www.smea.org.au/australia/bexley/dentists/bexley-dental" target="_blank" rel="noopener">smea.org.au</a>
+          <a href="https://www.freelistingaustralia.com/listings/bexleydashdental" target="_blank" rel="noopener">freelistingaustralia.com</a>
+          <a href="http://www.shoplocalaustralia.com.au/australia/bexley/dentists/bexley-dental" target="_blank" rel="noopener">shoplocalaustralia.com.au</a>
+          <a href="https://www.superpages.com.au/company/212aae0e840a2e3918a13b72d0f38989/bexley-dental/bexley/dentists" target="_blank" rel="noopener">superpages.com.au</a>
+          <a href="https://www.provenexpert.com/bexley-dental2/" target="_blank" rel="noopener">provenexpert.com</a>
+          <a href="http://www.russianbusinessdirect.com/australia/bexley/health-medical/bexley-dental" target="_blank" rel="noopener">russianbusinessdirect.com</a>
+          <a href="https://www.find-us-here.com/businesses/Bexley-Dental-Bexley-New-South-Wales-Australia/34341238/" target="_blank" rel="noopener">find-us-here.com</a>
+          <a href="https://www.bunity.com/bexley-dental" target="_blank" rel="noopener">bunity.com</a>
+        </div>
+      </section>
+
+      <!-- FAQ -->
+      <section class="card" id="faq" aria-label="Frequently asked questions">
+        <h2>FAQ</h2>
+        <details>
+          <summary>Do you accept emergency patients?</summary>
+          <div class="meta">Yes—call us on (02) 9567 4151 and we’ll arrange the earliest suitable time.</div>
+        </details>
+        <details>
+          <summary>Can you replace a full arch in one day?</summary>
+          <div class="meta">All-on-4 offers a fixed, same-day solution for many patients. We’ll assess suitability during your consultation.</div>
+        </details>
+        <details>
+          <summary>Do you offer Invisalign® for adults and teens?</summary>
+          <div class="meta">Yes. We tailor orthodontic plans with Invisalign® or braces based on your goals and clinical needs.</div>
+        </details>
+      </section>
+
+      <footer class="meta" role="contentinfo" style="text-align:center;padding:10px 0 20px">
+        © 2025 Bexley Dental • <a href="https://bexleydental.com.au/privacy-policy/" target="_blank" rel="noopener">Privacy</a>
+      </footer>
+    </div>
+  </main>
+</div>
+
+<!-- Mobile quick actions -->
+<div class="fab" aria-label="Quick actions">
+  <a class="primary" href="https://bexleydental.dentr.net/" target="_blank" rel="noopener">Book</a>
+  <a class="ghost" href="tel:+61295674151">Call</a>
+</div>
+
+</body>
+</html>
